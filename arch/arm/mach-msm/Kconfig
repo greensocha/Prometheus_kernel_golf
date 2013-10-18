@@ -255,6 +255,14 @@ config PERFLOCK_SCREEN_POLICY
         default n
         bool "Change Cpufreq Policy while Screen ON/OFF"
 
+config MSM_CPU_FREQ_ONDEMAND_MIN
+        int "Minimum speed with ondemand"
+        default MSM_CPU_FREQ_MAX
+
+config MSM_CPU_FREQ_ONDEMAND_MAX
+        int "Maximum speed with ondemand"
+        default MSM_CPU_FREQ_MAX
+
 config PERFLOCK_SCREEN_ON_MIN
         depends on PERFLOCK_SCREEN_POLICY
         int "Minimum speed while screen on"
